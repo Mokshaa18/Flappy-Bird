@@ -1,7 +1,7 @@
 # This .gitignore file should be placed at the root of your Unity project directory
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
-#
+
 .utmp/
 [Ll]ibrary/
 [Tt]emp/
@@ -11,13 +11,18 @@
 [Ll]ogs/
 [Uu]ser[Ss]ettings/
 *.log
+*.cpp
 
-# By default unity supports Blender asset imports, *.blend1 blender files do not need to be commited to version control.
+# Unity backup/build folders
+*_BackUpThisFolder_ButDontShipItWithYourGame/
+*_BurstDebugInformation_DoNotShipIt/
+IOS Build Folder/
+
+# Blender files
 *.blend1
 *.blend1.meta
 
-# MemoryCaptures can get excessive in size.
-# They also could contain extremely sensitive data
+# MemoryCaptures can get excessive in size
 /[Mm]emoryCaptures/
 
 # Recordings can get excessive in size
@@ -84,9 +89,6 @@ InitTestScene*.unity*
 /[Aa]ssets/StreamingAssets/aa*
 /[Aa]ssets/AddressableAssetsData/link.xml*
 /[Aa]ssets/Addressables_Temp*
-# By default, Addressables content builds will generate addressables_content_state.bin
-# files in platform-specific subfolders, for example:
-# /Assets/AddressableAssetsData/OSX/addressables_content_state.bin
 /[Aa]ssets/AddressableAssetsData/*/*.bin*
 
 # Visual Scripting auto-generated files
