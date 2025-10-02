@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2780383234571800149}
   - component: {fileID: 6143341934639284142}
+  - component: {fileID: 2474522384089529565}
   m_Layer: 0
   m_Name: Obstacles
   m_TagString: Untagged
@@ -47,7 +48,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bba152f085e4b2408c3ea3b2ccac94c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  deadZone: -30
+  obsticleSpawner: {fileID: 0}
+  deadZone: -60
+--- !u!61 &2474522384089529565
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3562100676018691507}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -20.3, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 41.9, y: 69.2}
+  m_EdgeRadius: 0
 --- !u!1 &5346943682685324036
 GameObject:
   m_ObjectHideFlags: 0
@@ -61,7 +109,7 @@ GameObject:
   - component: {fileID: 8670597275920834152}
   m_Layer: 0
   m_Name: Bottom Obstacle
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,8 +123,8 @@ Transform:
   m_GameObject: {fileID: 5346943682685324036}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -19.4, z: 0}
-  m_LocalScale: {x: 1, y: -1, z: 1}
+  m_LocalPosition: {x: 0, y: -39.0653, z: 0}
+  m_LocalScale: {x: 1, y: -2.7979, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2780383234571800149}
@@ -125,8 +173,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 286177449
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -8634368658134348540, guid: 0aa407899c1a8a744af6ef4c514f3da2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -290,7 +338,7 @@ GameObject:
   - component: {fileID: 8440439009560216849}
   m_Layer: 0
   m_Name: Top Obstacle
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -304,8 +352,8 @@ Transform:
   m_GameObject: {fileID: 6543089752553159772}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 17.26, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 41.1472, z: 0}
+  m_LocalScale: {x: 1, y: 3.1839, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2780383234571800149}
@@ -354,8 +402,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 286177449
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -8634368658134348540, guid: 0aa407899c1a8a744af6ef4c514f3da2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
