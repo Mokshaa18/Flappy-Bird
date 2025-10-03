@@ -861,7 +861,7 @@ Transform:
   m_GameObject: {fileID: 1433656251}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 51.8, y: -22, z: 0}
+  m_LocalPosition: {x: 22.6, y: -22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -943,10 +943,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 666329831}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -1494, y: 828}
-  m_SizeDelta: {x: 166.32, y: 124.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 426, y: -252}
+  m_SizeDelta: {x: 166.32007, y: 124.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1719987299
 PrefabInstance:
@@ -1177,12 +1177,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   bird: {fileID: 689427027}
   obstacle: {fileID: 3562100676018691507, guid: f19819fa0161bfe44b130affbb9a9718, type: 3}
-  heightOffset: 20
+  heightOffset: 25
   currentDistance: 0
   currentObj: {fileID: 0}
-  offset: 30
-  minOffSet: 10
-  initialSpeed: 9
+  spawnDistance: 3
+  offSetRate: 2.5
+  currOffSet: 0
+  maxOffSet: 20
+  initialSpeed: 5
   increaseObstacleSpeedPer: 3
   cloudSpawner: {fileID: 1433656252}
 --- !u!4 &1898855384
@@ -1194,7 +1196,7 @@ Transform:
   m_GameObject: {fileID: 1898855382}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 49.9, y: 0.87, z: 0}
+  m_LocalPosition: {x: 34, y: 0.87, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1385,27 +1387,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8104626376958342778, guid: b36f01fe9fa9c0e46864a0534b8d470e, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8104626376958342778, guid: b36f01fe9fa9c0e46864a0534b8d470e, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8104626376958342778, guid: b36f01fe9fa9c0e46864a0534b8d470e, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8104626376958342778, guid: b36f01fe9fa9c0e46864a0534b8d470e, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8104626376958342778, guid: b36f01fe9fa9c0e46864a0534b8d470e, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: -1820
       objectReference: {fileID: 0}
     - target: {fileID: 8104626376958342778, guid: b36f01fe9fa9c0e46864a0534b8d470e, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: -980
       objectReference: {fileID: 0}
     - target: {fileID: 8104626376958342778, guid: b36f01fe9fa9c0e46864a0534b8d470e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1492,11 +1494,11 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 689427030}
   - {fileID: 1898855384}
+  - {fileID: 1433656253}
   - {fileID: 666329831}
   - {fileID: 1966522971}
   - {fileID: 2144181381}
   - {fileID: 1004703116}
   - {fileID: 1816798719}
-  - {fileID: 1433656253}
   - {fileID: 496841782}
   - {fileID: 1719987299}
