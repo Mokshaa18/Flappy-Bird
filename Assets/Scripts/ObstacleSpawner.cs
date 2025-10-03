@@ -9,8 +9,11 @@ public class ObstacleSpawner : MonoBehaviour
     public float currentDistance;
     public GameObject currentObj;
 
-    public float offset = 100;
-    public float minOffSet;
+    public float spawnDistance;
+    public float offSetRate;
+
+    public float currOffSet;
+    public float maxOffSet;
 
     public float initialSpeed = 8f;
     public int increaseObstacleSpeedPer = 10;
@@ -22,6 +25,7 @@ public class ObstacleSpawner : MonoBehaviour
     void Start()
     {
         totalObstacles = 0;
+        currOffSet = 0;
         ObstacleMoveScript.moveSpeed = initialSpeed;
         spawnObstacle();
         currentDistance = Mathf.Abs(currentObj.transform.position.x - bird.transform.position.x);
@@ -32,7 +36,7 @@ public class ObstacleSpawner : MonoBehaviour
     {
 
         currentDistance = Mathf.Abs(currentObj.transform.position.x - bird.transform.position.x);
-        if (currentDistance < offset)
+        if (currentDistance < spawnDistance)
         {
             spawnObstacle();
         }
@@ -48,10 +52,11 @@ public class ObstacleSpawner : MonoBehaviour
 
         totalObstacles++;
 
-        if (totalObstacles % increaseObstacleSpeedPer == 0 && offset >= minOffSet)
+        if (totalObstacles % increaseObstacleSpeedPer == 0 && currOffSet <= maxOffSet)
         {
-            ObstacleMoveScript.moveSpeed += 1.5f;
-            offset--;
+            ObstacleMoveScript.moveSpeed += 1f;
+            transform.position += new Vector3(offSetRate, 0, 0);
+            currOffSet += 1;
         }
      }
 }
