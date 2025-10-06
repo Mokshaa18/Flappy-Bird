@@ -12,15 +12,15 @@ public class PointDetectorScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-
-    }
+    // void Update()
+    // {
+    // }
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.layer == 3)
         {
             logic.addScore(1);
+            // logic.high_Score();
             passThroughSound.Play();
         }
     }
