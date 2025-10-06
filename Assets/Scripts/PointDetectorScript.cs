@@ -3,6 +3,8 @@ using UnityEngine;
 public class PointDetectorScript : MonoBehaviour
 {
     public LogicScript logic;
+
+    public AudioSource passThroughSound;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,7 +20,8 @@ public class PointDetectorScript : MonoBehaviour
     {
         if (collision.gameObject.layer == 3)
         {
-        logic.addScore(1);
+            logic.addScore(1);
+            passThroughSound.Play();
         }
     }
 }

@@ -5,6 +5,7 @@ public class BirdScript : MonoBehaviour
     public Rigidbody2D myRigidbody;
     public float flapStrength;
     public LogicScript logic;
+    public bool gameOver;
     public bool birdIsAlive = true;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,10 +24,11 @@ public class BirdScript : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.tag == "Obstacle")
+        if (collision.collider.tag == "Obstacle" && !gameOver)
         {
             logic.gameOver();
             birdIsAlive = false;
+            gameOver = true;
         }
     }
 }

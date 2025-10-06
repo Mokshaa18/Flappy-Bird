@@ -1,2 +1,13 @@
 fileFormatVersion: 2
 guid: 447fe3513968a1c41adfe40512c9c54c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - logic: {instanceID: 0}
+  - passThroughSound: {fileID: -6125612258148558584, guid: f19819fa0161bfe44b130affbb9a9718, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
