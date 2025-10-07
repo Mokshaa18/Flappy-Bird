@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Unity.VisualScripting;
 using System.Data;
+using System;
 public class LogicScript : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -40,6 +41,7 @@ public class LogicScript : MonoBehaviour
         scoreText.text = playerScore.ToString();
         UpdateScoreUI();
         CheckAndSaveHighScore();
+        // Debug.Log(playerScore);
     }
     
 
