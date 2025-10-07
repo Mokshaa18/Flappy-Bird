@@ -36,7 +36,7 @@ public class ObstacleSpawner : MonoBehaviour
     {
 
         currentDistance = Mathf.Abs(currentObj.transform.position.x - bird.transform.position.x);
-        if (currentDistance < spawnDistance)
+        if (currentDistance < spawnDistance + 10f)
         {
             spawnObstacle();
         }
