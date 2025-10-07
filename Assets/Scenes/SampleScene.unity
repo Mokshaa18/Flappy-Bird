@@ -930,7 +930,7 @@ GameObject:
   - component: {fileID: 1433656253}
   - component: {fileID: 1433656252}
   m_Layer: 0
-  m_Name: CloiudSpawner
+  m_Name: CloudSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
