@@ -60,10 +60,12 @@ public class BackgroundScenary : MonoBehaviour
         float worldScreenHeight = Camera.main.orthographicSize * 2f;
         float worldScreenWidth = worldScreenHeight * Screen.width / Screen.height;
 
+        float scaleHeight = sr.sprite.bounds.size.y;
+        float scaleWidth = sr.sprite.bounds.size.x;
         // Get sprite size
         Vector3 scale = bg.transform.localScale;
-        scale.x = worldScreenWidth / sr.sprite.bounds.size.x;
-        scale.y = worldScreenHeight / sr.sprite.bounds.size.y;
+        scale.x = worldScreenWidth / scaleWidth;
+        scale.y = worldScreenHeight / scaleHeight;
         bg.transform.localScale = scale;
     }
 }
