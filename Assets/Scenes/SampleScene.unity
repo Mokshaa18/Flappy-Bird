@@ -2450,7 +2450,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: f2155c2b598af4940a2b456db7b7aa43, type: 3}
+  m_Resource: {fileID: 8300000, guid: 85db7f98afa615a45b6612305836a2dd, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2557,6 +2557,10 @@ PrefabInstance:
       value: 0.6000109
       objectReference: {fileID: 0}
     - target: {fileID: 2160193018365833222, guid: b36f01fe9fa9c0e46864a0534b8d470e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2160193018365833222, guid: b36f01fe9fa9c0e46864a0534b8d470e, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
@@ -2566,7 +2570,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3600187226017058893, guid: b36f01fe9fa9c0e46864a0534b8d470e, type: 3}
       propertyPath: m_FontData.m_MaxSize
-      value: 60
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 3600187226017058893, guid: b36f01fe9fa9c0e46864a0534b8d470e, type: 3}
       propertyPath: m_FontData.m_MinSize
@@ -2574,7 +2578,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3600187226017058893, guid: b36f01fe9fa9c0e46864a0534b8d470e, type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 60
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 3600187226017058893, guid: b36f01fe9fa9c0e46864a0534b8d470e, type: 3}
       propertyPath: m_FontData.m_FontStyle
@@ -2594,7 +2598,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5829622212595314029, guid: b36f01fe9fa9c0e46864a0534b8d470e, type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 67
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 8104626376958342778, guid: b36f01fe9fa9c0e46864a0534b8d470e, type: 3}
       propertyPath: m_Pivot.x
@@ -2682,11 +2686,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8293859776795622797, guid: b36f01fe9fa9c0e46864a0534b8d470e, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 180.1
+      value: 385
       objectReference: {fileID: 0}
     - target: {fileID: 8293859776795622797, guid: b36f01fe9fa9c0e46864a0534b8d470e, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 84.9
+      value: 85
       objectReference: {fileID: 0}
     - target: {fileID: 8293859776795622797, guid: b36f01fe9fa9c0e46864a0534b8d470e, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2694,7 +2698,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8293859776795622797, guid: b36f01fe9fa9c0e46864a0534b8d470e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -42.9
+      value: -60
       objectReference: {fileID: 0}
     - target: {fileID: 8442912313102178467, guid: b36f01fe9fa9c0e46864a0534b8d470e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
